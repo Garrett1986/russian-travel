@@ -1,0 +1,9 @@
+.places__title{
+  margin-top: 0;
+  margin-bottom: 48px;
+  align-items: center;
+  font-family: Inter-Black, Arial, Helvetica, sans-serif;
+  line-height: 76px;
+  font-size: 72px;
+  font-weight: normal;
+}

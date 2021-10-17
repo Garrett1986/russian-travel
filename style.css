@@ -1,0 +1,473 @@
+/*
+Шрифты
+*/
+@font-face {
+  font-family: "Inter-Black";
+  src: url(/font/Inter-Black.woff);
+}
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(/font/Inter-Regular.woff);
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(/font/Inter-Bold.woff);
+}
+/*
+Общие настройки страницы
+*/
+.page{
+  margin: 0;
+  padding: 0;
+  background-color: hsl(216, 6%, 17%);
+  color: white;
+
+}
+/* Блок стилей header*/
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1184px;
+  margin: 28px 48px 56px;
+}
+
+.header__logo{
+    width: 176px;
+    height: 52px;
+}
+.header__lang-link{
+  color: white;
+  font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+
+}
+.header__lang-link:first-child{
+    margin-right: 18px;
+}
+.header__lang-link:last-child{
+  text-decoration: none;
+}
+/* Блок стилей lead */
+.content{
+    max-width: 1280px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.lead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 148px;
+    margin-left: 148px;
+    margin-bottom: 92px;
+}
+.lead__title{
+    max-width: 720px;
+    max-height: 200px;
+    text-align: center;
+    font-family: Inter-Black, Arial, Helvetica, sans-serif;
+    line-height: 100px;
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.lead__subtitle{
+    max-width: 640px;
+    max-height: 72px;
+    text-align: center;
+    font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: normal;
+}
+.lead__image{
+    max-width: 984px;
+    align-items: center;
+}
+.lead__caption{
+    align-self: start;
+    font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+    line-height: 14px;
+    font-size: 10px;
+    font-weight: normal;
+}
+/*Блок Intro*/
+.intro{
+  margin: 0 492px 92px 148px;
+
+}
+.intro__title{
+    align-items: center;
+    font-family: Inter-Black, Arial, Helvetica, sans-serif;
+    line-height: 58px;
+    font-size: 54px;
+    font-weight: normal;
+}
+.intro__text{
+    margin-top: 40px;
+    margin-bottom: 33px;
+    font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+    line-height: 26.08px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.intro__list{
+    list-style: none;
+    padding: 0;
+    font-family: Inter-Bold, Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.intro__list-meaning{
+  font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: normal;
+}
+/*Блок Фото-грид*/
+
+.photo-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(284px, max-content));
+    justify-content: space-between;
+    grid-row-gap: 16px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 92px;
+    max-width: 1184px;
+}
+.photo-grid__item{
+  width: 284px;
+}
+/* Блок Places */
+
+.places{
+    margin: 0 148px;
+}
+.place{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    grid-column-gap: 40px;
+    margin-bottom: 80px;
+}
+.places__title{
+    margin-top: 0;
+    margin-bottom: 48px;
+    align-items: center;
+    font-family: Inter-Black, Arial, Helvetica, sans-serif;
+    line-height: 76px;
+    font-size: 72px;
+    font-weight: normal;
+}
+
+.places__img{
+  grid-row: 2/-1;
+  max-width: 460px;
+
+}
+.places__url-heading{
+  color: #aaaaaa;
+  font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+  line-height: 12px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.places__link{
+  color: white;
+  font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.places__link:hover{
+  color: #aaaaaa;
+}
+.places__paragraph{
+    font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+    line-height: 29.34px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Блок Cover */
+.cover{
+  margin: 92px 48px;
+  position: relative;
+}
+.cover__background{
+  background-image: url(../images/sprint-3-images/cover-trains.png);
+  background-size: cover;
+  width: 1184px;
+  height: 740px;
+  margin-top: 92px;
+  z-index: 10;
+}
+.cover__background:hover{
+  cursor: pointer;
+  box-shadow: 0, 0, 0, #000000;
+  opacity: 0.25;
+}
+.cover__title{
+  position: absolute;
+  margin: 245px 312px 32px;
+  text-align: center;
+  z-index: 50;
+  font-family: Inter-Black, Arial, Helvetica, sans-serif;
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: normal;
+}
+.cover__subtitle{
+  position: absolute;
+  margin: 429px 412px 245px;
+  text-align: center;
+  z-index: 50;
+  font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: normal;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto 22px;
+  max-width: 1184px;
+}
+.footer__link{
+  margin-right: 18px;
+  text-decoration: none;
+  color: white;
+  font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+}
+.footer__link:nth-child(4){
+  margin-right: 31px;
+}
+
+.footer__copiright{
+  font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1024px){
+  .page{
+    max-width: 1024px;
+  }
+  .content{
+    max-width: 1024px;
+  }
+  .header{
+    margin-bottom: 48px;
+  }
+  .lead{
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  .lead__image{
+    max-width: 928px;
+  }
+  .intro{
+    margin-left: 48px;
+    margin-right: 268px;
+  }
+  .photo-grid{
+    max-width: 928px;
+    grid-row-gap: 14px;
+  }
+  .photo-grid__item{
+    width: 300px;
+  }
+  .places{
+    margin: 92px 48px;
+  }
+  .places__img{
+    max-width: 440px;
+  }
+  .cover{
+    margin: 0;
+  }
+  .cover__background{
+    width: 1024px;
+    height: 640px;
+    margin: 0 auto;
+  }
+  .cover__title{
+    margin: 195px 232px 293px;
+  }
+  .cover__subtitle{
+    margin: 379px 332px 195px;
+  }
+  .footer{
+    margin: 92px 48px 24px;
+    max-width: 928px;
+  }
+}
+@media  screen and (min-width: 320px) and (max-width: 768px) {
+  .lead__image{
+    width: 100%;
+  }
+
+}
+@media  screen and (max-width: 768px){
+  .header{
+    margin: 28px 24px 48px;
+  }
+  .lead{
+    margin: 0 0 88px 0;
+  }
+  .lead__caption{
+    margin-left: 24px;
+  }
+  .intro{
+    margin: 24px 88px;
+  }
+  .intro__title{
+    margin: 0;
+  }
+  .intro__list{
+    margin: 0;
+  }
+  .photo-grid{
+    margin: 0 24px;
+  }
+  .photo-grid__item{
+    width: 352px;
+  }
+  .place{
+    margin: 88px 24px 90px;
+  }
+  .places__title{
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .places__url-heading{
+    line-height: 12px;
+  }
+  .places__paragraph{
+    line-height: 26.08px;
+  }
+  .cover__background{
+    width: 768px;
+    height: 480px;
+  }
+  .places{
+    margin: 88px auto 90px;
+  }
+  .places__img{
+    max-width: 340px;
+  }
+  .cover__title{
+    margin: 115px 104px 213px;
+  }
+  .cover__subtitle{
+    margin: 299px 204px 115px;
+  }
+  .footer{
+    margin: 88px 24px 24px;
+  }
+}
+
+@media  screen and (max-width: 320px) {
+  .header{
+    margin: 16px 16px 48px;
+  }
+  .header__logo{
+    width: 142px;
+    height: 42px;
+  }
+
+  .header__lang-link{
+    font-size: 18px;
+    line-height: 20px;
+
+  }
+  .lead__image{
+    width: 100%;
+  }
+  .lead__title{
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .lead__subtitle{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .intro{
+    margin: 64px 16px;
+  }
+  .intro__title{
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .photo-grid{
+    margin: 64px 16px;
+  }
+  .photo-grid__item{
+    max-width: 288px;
+  }
+  .places{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .place{
+    margin: 0 0 50px 0;
+  }
+  .places__website{
+    margin: 0px 16px 32px;
+  }
+  .places__title{
+    font-size: 32px;
+    line-height: 35px;
+    margin:0 16px 32px;
+  }
+  .places__img{
+    max-width: 320px;
+    grid-row: 3;
+    margin-bottom: 32px;
+  }
+  .places__paragraph{
+    margin-bottom: 25px;
+  }
+  .cover__background{
+    width: 320px;
+    height: 200px;
+  }
+  .cover__title{
+    font-size: 32px;
+    line-height: 35px;
+    margin: 33px 16px 37px;
+  }
+  .cover__subtitle{
+    font-size: 14px;
+    line-height: 16px;
+    margin: 119px 16px 33px;
+  }
+  .footer{
+    margin: 64px 118px 24px 16px;
+    flex-direction: column;
+  }
+  .footer__links{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__link{
+    font-size: 24px;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+  .footer__copiright{
+    margin-top: 16px;
+  }
+}
