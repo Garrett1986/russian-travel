@@ -1,6 +1,9 @@
 .page{
-  margin: 0;
-  padding: 0;
   background-color: hsl(216, 6%, 17%);
   color: white;
+}
+@media screen and (max-width: 1024px){
+  .page{
+    max-width: 1024px;
+  }
 }

@@ -1,0 +1,10 @@
+.places__link{
+  color: white;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.places__link:hover{
+  color: #aaaaaa;
+}

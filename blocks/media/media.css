@@ -55,7 +55,6 @@
   .lead__image{
     width: 100%;
   }
-
 }
 @media  screen and (max-width: 768px){
   .header{
@@ -124,11 +123,9 @@
     width: 142px;
     height: 42px;
   }
-
   .header__lang-link{
     font-size: 18px;
     line-height: 20px;
-
   }
   .lead__image{
     width: 100%;

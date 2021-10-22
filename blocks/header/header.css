@@ -1,24 +1,25 @@
-.footer{
+.header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto 22px;
   max-width: 1184px;
+  margin: 28px auto 56px;
 }
 @media screen and (max-width: 1024px){
-  .footer{
-    margin: 92px 48px 24px;
+  .header{
     max-width: 928px;
+    margin-bottom: 48px;
   }
 }
 @media  screen and (max-width: 768px){
-  .footer{
-    margin: 88px 24px 24px;
+  .header{
+    max-width: 720px;
+    margin: 28px 24px 48px;
   }
 }
 @media  screen and (max-width: 320px) {
-  .footer{
-    margin: 64px 118px 24px 16px;
-    flex-direction: column;
+  .header{
+    max-width: 288px;
+    margin: 16px 16px 48px;
   }
 }
