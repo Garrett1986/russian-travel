@@ -1,0 +1,31 @@
+.cover__overlay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 740px;
+  text-decoration: none;
+  color: white;
+  background-image: url(../../../../images/sprint-3-images/cover-trains.png);
+  background-size: cover;
+  cursor: url(./images/sprint-3-images/Pointer.svg);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .cover__overlay{
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cover__overlay{
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .cover__overlay{
+    max-width: 320px;
+  }
+}

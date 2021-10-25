@@ -1,12 +1,10 @@
+.cover{
+  position: relative;
+  margin: 92px auto;
+}
 @media screen and (max-width: 1024px){
   .cover{
-    margin: 0;
+    margin: 92px 0;
   }
 }
-.cover{
-  display: grid;
-  grid-template-columns: minmax(min-content, max-content);
-  grid-template-rows: repeat(2, 1fr);
-  margin: 92px 48px;
-  position: relative;
-}
+
