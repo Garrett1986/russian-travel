@@ -10,4 +10,4 @@
 - Каждая ссылка имеет *hover*
 - Использованы медиазапросы
 - Классы созданы по БЭМ
-Ссылка про проект https://github.com/Garrett1986/russian-travel/index.html
+Ссылка про проект https://garrett1986.github.io/russian-travel/index.html
