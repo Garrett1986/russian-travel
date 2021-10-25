@@ -2,6 +2,17 @@
   position: relative;
   margin: 92px auto;
 }
+.cover::before{
+  position: absolute;
+  opacity: .25;
+  width: 100%;
+  content:" ";
+  z-index: -1;
+}
+.cover:hover{
+  background: rgba(0, 0, 0, 0.245) transparent;
+  opacity: .25;
+}
 @media screen and (max-width: 1024px){
   .cover{
     margin: 92px 0;

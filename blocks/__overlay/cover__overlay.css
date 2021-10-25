@@ -11,6 +11,16 @@
   background-size: cover;
   cursor: url(./images/sprint-3-images/Pointer.svg);
 }
+.cover::before{
+  position: absolute;
+  width: 100%;
+  content:" ";
+  z-index: -1;
+}
+.cover:hover{
+  background: rgba(0, 0, 0, 0.245) transparent;
+  opacity: .25;
+}
 
 
 
