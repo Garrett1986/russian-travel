@@ -6,5 +6,6 @@
   font-weight: 400;
 }
 .places__link:hover{
-  color: #aaaaaa;
+  color: #2a2c2f;
+  cursor: url(../images/sprint-3-images/Pointer.png);
 }
