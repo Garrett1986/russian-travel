@@ -1,11 +1,11 @@
-.places__link{
+.place__link{
   color: white;
   font-family: Inter, Arial, Helvetica, sans-serif;
   line-height: 22px;
   font-size: 18px;
   font-weight: 400;
 }
-.places__link:hover{
+.place__link:hover{
   color: #2a2c2f;
   cursor: url(../images/sprint-3-images/Pointer.png);
 }

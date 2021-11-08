@@ -1,4 +1,5 @@
-.places__title{
+.place__title{
+  grid-area: place__title;
   margin-top: 0;
   margin-bottom: 48px;
   align-items: center;
@@ -8,13 +9,13 @@
   font-weight: 900;
 }
 @media  screen and (max-width: 768px){
-  .places__title{
+  .place__title{
     font-size: 42px;
     line-height: 46px;
   }
 }
 @media  screen and (max-width: 320px) {
-  .places__title{
+  .place__title{
     font-size: 32px;
     line-height: 35px;
     margin:0 16px 32px;

@@ -1,3 +1,4 @@
+/*
 .place{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
@@ -6,5 +7,29 @@
   margin-bottom: 80px;
   justify-items: stretch;
 }
+*/
 
-
+.place{
+  display: grid;
+  grid-template-areas:
+  "place__title place__website"
+  "place__img place__paragraph";
+  grid-template-columns: 460px 1fr;
+  margin-bottom: 80px;
+  grid-column-gap: 40px;
+}
+@media screen and (max-width: 1024px){
+  .places{
+    margin: 92px auto;
+  }
+}
+@media screen and (max-width: 760px){
+  .place{
+    grid-template-areas:
+    "place__title"
+    "place__website"
+    "place__img"
+    "place__paragraph";
+    grid-template-columns: 1fr;
+  }
+}
