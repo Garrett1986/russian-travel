@@ -1,11 +1,11 @@
-.footer__copiright{
+.footer__copyright{
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
 }
 @media  screen and (max-width: 320px) {
-  .footer__copiright{
+  .footer__copyright{
     margin-top: 16px;
   }
 }

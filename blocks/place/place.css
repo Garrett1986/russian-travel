@@ -11,13 +11,14 @@
   .place{
     grid-template-columns: 440px 1fr;
     grid-column-gap: 32px;
-    margin: 92px auto;
+    margin-bottom: 76px;
   }
 }
 @media screen and (max-width: 768px){
   .place{
     grid-template-columns: 340px 1fr;
     grid-column-gap: 28px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 600px){
@@ -28,5 +29,13 @@
     "place__img"
     "place__paragraph";
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 320px){
+  .place{
+    margin-bottom: 50px;
+  }
+  .place:last-child{
+   margin-bottom: 0;
   }
 }

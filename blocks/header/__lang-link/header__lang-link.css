@@ -10,6 +10,10 @@
 .header__lang-link:first-child{
     margin-right: 18px;
 }
+.header__lang-link:hover{
+  color: #aaaaaa;
+  cursor: pointer;
+}
 
 @media  screen and (max-width: 320px) {
   .header__lang-link{
