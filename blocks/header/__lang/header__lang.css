@@ -1,6 +1,8 @@
 .header__lang{
   list-style-type: none;
   display: flex;
+  padding: 0px;
+  margin: 0px;
 }
 @media  screen and (max-width: 1024px) {
   .header__lang{

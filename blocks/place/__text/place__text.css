@@ -1,0 +1,8 @@
+.place__text{
+  margin: 0px;
+  margin-bottom: 26px;
+  padding: 0px;
+}
+.place__text:nth-child(2){
+  margin-top: 27px;
+}
