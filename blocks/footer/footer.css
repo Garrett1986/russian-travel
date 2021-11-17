@@ -13,8 +13,8 @@
 }
 @media  screen and (max-width: 768px){
   .footer{
-    margin: 72px auto 24px;
-    max-width: calc(100% - 48px);
+    margin: 0px auto 24px;
+    width: calc(100% - 48px);
   }
 }
 @media  screen and (max-width: 600px) {
