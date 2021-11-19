@@ -11,3 +11,17 @@
     margin-top: 0;
   }
 }
+@media  screen and (max-width: 768px) {
+  .header__lang{
+    padding: 0px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}
+@media  screen and (max-width: 320px) {
+  .header__lang{
+    padding: 0px;
+    margin-bottom: 0;
+    margin-top: 9px;
+  }
+}

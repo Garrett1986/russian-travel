@@ -3,7 +3,10 @@
 }
 
 @media  screen and (max-width: 320px) {
-  .footer__list-element:first-child{
-    margin-top: 0px;
+  .footer__list-element{
+    margin-bottom: 32px;
+  }
+  .footer__list-element:last-child{
+    margin-bottom: 0px;
   }
 }
